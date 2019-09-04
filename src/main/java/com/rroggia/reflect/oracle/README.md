@@ -28,4 +28,8 @@ There are several ways to get a `Class` depending on whether the code has access
 The simplest way to get a `Class` instance. It works for objects (arrays included), enums and interfaces.
 
 ### The .class Syntax
-If the type is available but there is no instance then it is possible to obtain a Class by appending ".class" to the name of the type. 
+If the type is available but there is no instance then it is possible to obtain a `Class` by appending `.class` to the name of the type. 
+
+This is also the easiest way to obtain the `Class` for a primitive type.
+
+The `.class` syntax may be used to retrieve a `Class` corresponding to a multi-dimensional `array` of a given type.

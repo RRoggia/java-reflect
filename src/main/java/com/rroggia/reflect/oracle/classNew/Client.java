@@ -22,6 +22,12 @@ public class Client {
 		Set<String> set = new HashSet<>();
 		Class<? extends Set> interfaceClazz = set.getClass();
 		System.out.println(interfaceClazz);
+
+		Class<Boolean> primitiveClazz = boolean.class;
+		System.out.println(primitiveClazz);
+
+		Class<?> multidimensionalArrayClazz = int[][][].class;
+		System.out.println(multidimensionalArrayClazz);
 	}
 
 	enum Enum {
