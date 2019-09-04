@@ -19,5 +19,13 @@ For every type of object, the Java virtual machine instantiates an immutable ins
 
 `Class` is the entry point for all of the Reflection APIs. 
 
-##Retrieving Class Objects
+## Retrieving Class Objects
+The entry point for all reflection operations is `java.lang.Class`.
 
+There are several ways to get a `Class` depending on whether the code has access to an object, the name of class, a type, or an existing Class.
+
+### Object.getClass()
+The simplest way to get a `Class` instance. It works for objects (arrays included), enums and interfaces.
+
+### The .class Syntax
+If the type is available but there is no instance then it is possible to obtain a Class by appending ".class" to the name of the type. 
