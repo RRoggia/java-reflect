@@ -33,3 +33,17 @@ If the type is available but there is no instance then it is possible to obtain 
 This is also the easiest way to obtain the `Class` for a primitive type.
 
 The `.class` syntax may be used to retrieve a `Class` corresponding to a multi-dimensional `array` of a given type.
+
+### Class.forName()
+If the fully-qualified name of a class is available, it is possible to get the corresponding `Class` using the static method `Class.forName()`.
+
+### TYPE Field for Primitive Type Wrappers
+The .class syntax is a more convenient and the preferred way to obtain the Class for a primitive type;
+
+Each of the primitive types and void has a wrapper class in java.lang that is used for boxing of primitive types to reference types.
+
+Each wrapper class contains a field named TYPE which is equal to the Class for the primitive type being wrapped. 
+
+### Methods that Return Classes
+
+
